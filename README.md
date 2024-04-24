@@ -1,8 +1,11 @@
 # Rationale
 ###### u3253279
 
+## GitHub Page Link
+https://tane-simons.github.io/u3253279_IIxD_Assessment3/index.html
+
 ## Reflection
-The website features many principles of interaction and user centred design, specifically in regard to visibility, feedback, consistency, and accessibility.
+The website features many principles of interaction and user centred design, specifically in regard to visibility, feedback, consistency, and accessibility. This is designed for an audience potentially composed of transport enthusiasts and website curators, as the site has ease of access to items and has metadata for each.
 
 In order to aid in the navigation of a site, especially with a significant amount of content, good visibility is a necessity (Nielson, 1994). The navigation of the website provides multiple options for navigation: in the navigation bar, the collections view, and the footer. The abundance and focus on these options create a visible interface promoting effective user interaction design. The incorporation of visibility prompts the user into exploring more of the website, whilst allowing users that are searching for a specific item to effectively and efficiently find it.
 
