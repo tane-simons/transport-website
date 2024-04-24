@@ -1,0 +1,465 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #0c0c1e;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*=============================================
+=            Header            =
+=============================================*/
+
+.wrapper {
+    display: grid;
+    margin: 10px auto 0 auto;
+    align-items: center;
+    grid-template-columns: 350px;
+}
+
+.logo {
+    width: 15%;
+    margin: 9px 0 0 50px;
+    grid-column: 1;
+}
+
+.wrapper nav {
+    border: #b68d40 solid 1px;
+    border-radius: 20px;
+    padding: 7px 5px;
+    grid-column: 2;
+    width: 215px;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.wrapper nav ul {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0 auto;
+    gap: 5px;
+}
+
+.wrapper nav a {
+    text-decoration: none;
+    padding: 3px 10px;
+    border-radius: 15px;
+    transition: background-color 200ms;
+    color: #FFEDCB;
+}
+
+.wrapper nav a:hover {
+    color: #0c0c1e;
+    background-color: #FFEDCB;
+}
+
+.wrapper nav .current-page-home,
+.wrapper nav .current-page-air,
+.wrapper nav .current-page-rail,
+.wrapper nav .current-page-road {
+    color: #0c0c1e;
+    background-color: #FFEDCB;
+}
+
+
+/*=====  End of Header  ======*/
+
+
+
+main {
+    margin: 0 0 0 50px;
+}
+
+
+/*=============================================
+=            Hero            =
+=============================================*/
+
+.hero {
+    display: grid;
+    margin: 90px 0 0 0;
+}
+
+.hero-text {
+    font-size: 400%;
+    grid-column: 1;
+    grid-row: 1;
+    color: #b68d40;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#hero-image {
+    width: 90%;
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    justify-self: right;
+    filter: invert(82%) sepia(22%) saturate(358%) hue-rotate(342deg) brightness(108%) contrast(106%);
+    transform: scalex(-1);
+    margin: 40px 30px 0 0;
+}
+
+.hero-cta {
+    grid-column: 1;
+    grid-row: 2;
+    width: 160px;
+    height: 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #FFEDCB;
+    text-decoration: none;
+    padding: 5px 0 0 20px;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    border: #b68d40 solid 1px;
+    transition: scale 300ms;
+    margin: 50px 0 0 0;
+}
+
+.hero-cta:hover {
+    cursor: pointer;
+    scale: 90%;
+}
+
+
+/*=====  End of Hero  ======*/
+
+
+
+#pseudo-element {
+    padding: 60px 0 0 0;
+    margin: 75px 0 0 0;
+}
+
+
+/*=============================================
+=            Collections            =
+=============================================*/
+
+#collections-grid-title {
+    color: #b68d40;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#collections-grid {
+    display: grid;
+    margin: 40px 50px 100px 0;
+    justify-content: space-between;
+}
+
+h3 {
+    font-size: 20px;
+    justify-self: center;
+    text-align: center;
+    margin: 40px 0 0 0;
+    color: #FFEDCB;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    scale: 100%;
+    transition: scale 500ms;
+    
+}
+
+.collection-nav img {
+    scale: 100%;
+    filter: invert(82%) sepia(22%) saturate(358%) hue-rotate(342deg) brightness(108%) contrast(106%);
+    transition: scale 500ms;
+    width: 170px;
+    margin: 40px 0px 60px 0px;
+    padding: 0 30px 0 30px;
+}
+
+.air-collection {
+    grid-column: 1;
+    text-decoration: none;
+    border-radius: 20px;
+    border: #b68d40 solid 1px;
+}
+
+.rail-collection {
+    grid-column: 2;
+    text-decoration: none;
+    border-radius: 20px;
+    border: #b68d40 solid 1px;
+}
+
+.road-collection {
+    grid-column: 3;
+    text-decoration: none;
+    border-radius: 20px;
+    border: #b68d40 solid 1px;
+}
+
+.collection-nav:hover img,
+.collection-nav:hover h3
+ {
+    scale: 90%;
+}
+
+/*=====  End of Collections  ======*/
+
+
+
+/*=============================================
+=            Footer            =
+=============================================*/
+
+footer {
+    border-top: 1px solid #b68d40;
+    display: grid;
+    align-items: center;
+    margin: 0 50px 0 50px;
+    color: #FFEDCB;
+    padding: 10px 0 10px 0;
+}
+
+footer ul {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    grid-column: 1;
+    margin: 0 20px 0 0;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 80%;
+}
+
+footer a {
+    color: #FFEDCB
+}
+
+footer a:visited {
+color: #FFEDCB;
+}
+
+footer img {
+    grid-column: 2;
+    width: 120px;
+    filter: invert(82%) sepia(22%) saturate(358%) hue-rotate(342deg) brightness(108%) contrast(106%);
+    scale: 70%;
+    justify-self: right;
+}
+
+#cc-text {
+    grid-column: 3;
+    font-weight: 100;
+    font-size: 10px;
+    width: 135px;
+    justify-self: left;
+    font-family: Helvetica, sans-serif;
+}
+
+#cc-text a{
+    text-decoration: underline;
+}
+
+#brand-mark {
+    grid-column: 4;
+    justify-self: right;
+    font-size: 80%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*=====  End of Footer  ======*/
+
+
+/*=============================================
+=            Collection Page            =
+=============================================*/
+
+
+.collection-page-title {
+    color: #b68d40;
+    margin: 60px 0 40px 125px;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.timeline-container {
+    display: grid;
+    grid-template-columns: 100px auto;
+    margin: 0 0 50px 40px;
+    font-family: sans-serif;
+}
+
+.timeline-line {
+    grid-column: 1;
+    height: 700px;
+    justify-self: right;
+    margin: 30px 0 0 0;
+    filter: invert(59%) sepia(24%) saturate(945%) hue-rotate(1deg) brightness(92%) contrast(92%);
+}
+
+.timeline-items {
+    grid-column: 2;
+    justify-self: left;
+    margin: 10px 0 0 20px;
+}
+
+.timeline-container .item {
+    margin: 0 0 33px 0;
+    display: grid;
+    padding: 10px;
+    border: #b68d40 solid 1px;
+    border-radius: 20px;
+    color:#FFEDCB;
+    height: 130px;
+}
+
+.timeline-container .item h2 {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 17px;
+    transition: 200ms;
+    margin: 5px 5px 5px 5px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.timeline-container .item p {
+    grid-column: 1;
+    grid-row: 2;
+    transition: 200ms ease;
+    width: 350px;
+    margin: 5px 5px 5px 5px;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    font-family: Helvetica, sans-serif;
+}
+
+.timeline-container .item img {
+    grid-column: 2;
+    grid-row: 2;
+    transition: 200ms;
+    margin: 5px 5px 5px 0px;
+    width: 150px;
+    border-radius: 10px;
+    grid-row: 1 / span 2;
+    align-self: center;
+    max-height: 120px;
+    object-fit: cover;
+}
+
+.timeline-container .item:hover h2, 
+.timeline-container .item:hover p, 
+.timeline-container .item:hover img {
+    scale: 95%;
+}
+
+/*=====  End of Collection Page  ======*/
+
+
+/*=============================================
+=            Item Page            =
+=============================================*/
+
+.item-page-title-container {
+    display: flex;
+    margin: 60px 0px 40px 125px;
+    color: #b68d40;
+    font-size: 30px;
+    justify-content: space-between;
+    width: 570px;
+}
+
+.item-page-title-container a {
+    text-decoration: none;
+    color: #b68d40;
+    grid-column: 1;
+}
+
+.item-page-year {
+    grid-column: 2;
+}
+
+.container {
+    width: 570px;
+    margin: 0 0 0 125px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#air-item-1 {
+    height: 1400px;
+}
+
+#air-item-2,
+#air-item-4,
+#rail-item-2,
+#rail-item-4 {
+    height: 850px;
+}
+
+#air-item-3 {
+    height: 1000px;
+}
+
+#rail-item-1 {
+    height: 1350px;
+}
+
+#rail-item-3 {
+    height: 900px;
+}
+
+#road-item-1 {
+    height: 1700px;
+}
+
+#road-item-2 {
+    height: 1200px;
+}
+
+#road-item-3 {
+    height: 650px;
+}
+
+#road-item-4 {
+    height: 1100px;
+}
+
+.container .item {
+    border: #b68d40 solid 1px;
+    font-family: sans-serif;
+    border-radius: 20px;
+    color:#FFEDCB;
+    padding: 20px;
+    width: 240px;
+}
+
+.container .item h2 {
+    font-family: serif;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container .item p, .container ul {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    font-family: Helvetica, sans-serif;
+    margin: 15px 0 0 0;
+    list-style: inside;
+}
+
+.container .item img {
+    max-width: 240px;
+    border-radius: 10px;
+}
